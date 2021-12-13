@@ -1,0 +1,9 @@
+language: cpp
+compiler: g++
+
+dist: ubuntu
+
+script:
+  - make
+  - make test
+  - make runtest
