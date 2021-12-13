@@ -15,12 +15,21 @@ int main()
     int p = 1;
     while (p != 2)
     {
-        printf("1 - Calculate expression \n2 - Exit \n");
-        scanf("%d", &p);
+        std::cout << "\tCalculator\n";
+        std::cout << "-----------Menu-----------\n";
+        std::cout << "|1 - Calculate expression| \n|2 - Exit                |\n";
+        std::cout << "", "|\n";
+        std::cout << "--------------------------\n";
+        std::cout << "Enter: ";
+        std::cin >> p;
         if (p != 1) break;
         system("cls");
-        printf("Enter an expression and click button 'Enter' \n Example \n A+B \n A-B \n A*B \n A/B \n A^B \n");
-        scanf("%lf%c%lf", &a, &d, &b);
+        std::cout << "------------------Calculator-----------------\n";
+        std::cout << "|Enter an expression and click button 'Enter'| \n|Example: | A+B | A-B | A*B | A/B | A^B |    |\n";
+        std::cout << "----------------------------------------------\n";
+        std::cout << "Enter: ";
+        std::cin >> a >> d >> b;
+
         while (getchar() != '\n');
         switch (d)
         {
