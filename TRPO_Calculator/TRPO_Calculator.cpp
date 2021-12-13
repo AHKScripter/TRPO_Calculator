@@ -4,6 +4,7 @@
 #include <cmath>
 #include <clocale>
 #include <stdlib.h>
+#include "TRPO_Functions.h"
 using namespace std;
 
 int main()
