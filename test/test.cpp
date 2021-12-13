@@ -1,5 +1,5 @@
 #include "../catch/testing.hpp"
-#include "../calcApp/TRPO_Functions.h"
+#include "../TRPO_Calculator/TRPO_Functions.h"
 
 struct test_FirstAndTrivial : TestCase {
 
