@@ -53,6 +53,12 @@ double Stirling(int value_A, int value_B)
         if (value_B == 0) return 0;
         else
             return Stirling(value_A - 1, value_B - 1) + value_B * Stirling(value_A - 1, value_B);
+}
+
+double Triangle(double value_A, double value_B, double value_C) {
+    double p = (value_A + value_B + value_C) / 2;
+    double s = pow(double(p * (p - value_A) * (p - value_B) * (p - value_C)), 0.5);
+    return s;
 
 }
 

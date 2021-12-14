@@ -38,6 +38,22 @@ struct test_FirstAndTrivial : TestCase {
 			ASSERT_TRUE(elevate(2, 1) == 2);
 			ASSERT_TRUE(elevate(2, 5) == 32);
 
+			//Testing function LengthOfCircle
+			ASSERT_TRUE(LengthOfCircle(40) == 251.327412);
+
+			//Testing function factorial		
+			ASSERT_TRUE(factorial(3) == 6);
+			ASSERT_TRUE(factorial(6) == 720);
+			ASSERT_TRUE(factorial(15) == 1307674368000);
+
+			//Testing function Stirling	
+			ASSERT_TRUE(Stirling(5, 2) == 15);
+			ASSERT_TRUE(Stirling(6, 1) == 1);
+
+			//Testing function Triangle
+			ASSERT_FALSE(Triangle(6, 5, 4) == 9.998725);
+			ASSERT_FALSE(Triangle(7, 5, 5) == 12.412124);
+
 		system("pause");
 	}
 };

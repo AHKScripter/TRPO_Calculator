@@ -13,3 +13,4 @@ double elevate(double value_A, double value_B);
 double LengthOfCircle(double value_A);
 double factorial(double value_A);
 double Stirling(int value_A, int value_B);
+double Triangle(double value_A, double value_B, double value_C);
