@@ -7,32 +7,32 @@
 #include <string.h>
 
 
-double sum(double a, double b) {
+double sum(double value_A, double value_B) {
     double r;
-    r = a + b;
+    r = value_A + value_B;
     return r;
 }
 
-double mynus(double a, double b) {
+double mynus(double value_A, double value_B) {
     double r;
-    r = a - b;
+    r = value_A - value_B;
     return r;
 }
 
-double multiply(double a, double b) {
+double multiply(double value_A, double value_B) {
     double r;
-    r = a * b;
+    r = value_A * value_B;
     return r;
 }
-double share(double a, double b) {
+double share(double value_A, double value_B) {
     double r;
-    r = a / b;
+    r = value_A / value_B;
     return r;
 }
 
-double elevate(double a, double b) {
+double elevate(double value_A, double value_B) {
     double r;
-    r = pow(a, b);
+    r = pow(value_A, value_B);
     return r;
 }
 
