@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-    double value_A, value_B;
+    double value_A, value_B, value_C;
     char choice = 'y';
     int p = 1, select = 0;
     while (p != 3)
@@ -99,8 +99,10 @@ int main()
             cout << "|[1] Circle Radis   |L*Pi |\n";
             cout << "|[2] Exponentiation | A^B |\n";
             cout << "|[3] Factorial      | A!  |\n";
-            cout << "|[4] Stirling num  2-kind |\n";            
-            cout << "|[5] Back to menu         |\n";
+            cout << "|[4] Stirling       | 2nd |\n";  
+            cout << "|[5] Triangle       |  S  |\n";
+            cout << "|[6] Back to menu         |\n";
+
             cout << "---------------------------\n";
             cout << " Select a menu item: ";
             cin >> select;
@@ -134,6 +136,15 @@ int main()
                     printf(" Result = %lf\n", Stirling(value_A, value_B));
                     break;
                 case 5:
+                    cout << " A: ";
+                    cin >> value_A;
+                    cout << " B: ";
+                    cin >> value_B;
+                    cout << " C: ";
+                    cin >> value_C;
+                    printf(" Result = %lf\n", Triangle(value_A, value_B, value_C));
+                    break;
+                case 6:
                     goto refresh_menu;
                 default:
                     cout << " Invalid value...Please try again\n" << endl;
