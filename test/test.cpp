@@ -4,35 +4,40 @@
 struct test_FirstAndTrivial : TestCase {
 
 	void run() override {
+			//Testing function sum
+			ASSERT_TRUE(sum(2, 3) == 5);
+			ASSERT_TRUE(sum(2, 3) == 5);
+			ASSERT_TRUE(sum(-2, -3) == -5);
+			ASSERT_TRUE(sum(0, 0) == 0);
+			ASSERT_TRUE(sum(-8, 3) == -5);
+			ASSERT_TRUE(sum(0, -3) == -3);
+			ASSERT_TRUE(sum(2, -3) == -1);
 
-		ASSERT_TRUE(sum(2, 3) == 5);
-		ASSERT_TRUE(sum(2, 3) == 5);
-		ASSERT_TRUE(sum(-2, -3) == -5);
-		ASSERT_TRUE(sum(0, 0) == 0);
-		ASSERT_TRUE(sum(-8, 3) == -5);
-		ASSERT_TRUE(sum(0, -3) == -3);
-		ASSERT_TRUE(sum(2, -3) == -1);
+			//Testing function mynus
+			ASSERT_TRUE(mynus(2, -3) == 5);
+			ASSERT_TRUE(mynus(-2, -3) == 1);
+			ASSERT_TRUE(mynus(0, -8) == 8);
+			ASSERT_TRUE(mynus(2, 9) == -7);
+		
+			//Testing function multiply
+			ASSERT_TRUE(multiply(2, -3) == -6);
+			ASSERT_TRUE(multiply(0, -3) == 0);
+			ASSERT_TRUE(multiply(-2, -3) == 6);
+			ASSERT_TRUE(multiply(2, -3) == -6);
 
-		ASSERT_TRUE(mynus(2, -3) == 5);
-		ASSERT_TRUE(mynus(-2, -3) == 1);
-		ASSERT_TRUE(mynus(0, -8) == 8);
-		ASSERT_TRUE(mynus(2, 9) == -7);
+			//Testing function share
+			ASSERT_TRUE(share(8, -2) == -4);
+			ASSERT_TRUE(share(0, -3) == 0);
+			ASSERT_TRUE(share(-3, -3) == 1);
+			ASSERT_TRUE(share(-3, -3) == 1);
+			ASSERT_TRUE(share(27, 3) == 9);
 
-		ASSERT_TRUE(multiply(2, -3) == -6);
-		ASSERT_TRUE(multiply(0, -3) == 0);
-		ASSERT_TRUE(multiply(-2, -3) == 6);
-		ASSERT_TRUE(multiply(2, -3) == -6);
+			//Testing function elevate
+			ASSERT_TRUE(elevate(2, 2) == 4);
+			ASSERT_TRUE(elevate(2, 0) == 1);
+			ASSERT_TRUE(elevate(2, 1) == 2);
+			ASSERT_TRUE(elevate(2, 5) == 32);
 
-		ASSERT_TRUE(share(8, -2) == -4);
-		ASSERT_TRUE(share(0, -3) == 0);
-		ASSERT_TRUE(share(-3, -3) == 1);
-		ASSERT_TRUE(share(-3, -3) == 1);
-		ASSERT_TRUE(share(27, 3) == 9);
-
-		ASSERT_TRUE(elevate(2, 2) == 4);
-		ASSERT_TRUE(elevate(2, 0) == 1);
-		ASSERT_TRUE(elevate(2, 1) == 2);
-		ASSERT_TRUE(elevate(2, 5) == 32);
 		system("pause");
 	}
 };
