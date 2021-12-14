@@ -36,4 +36,23 @@ double elevate(double value_A, double value_B) {
     return r;
 }
 
+double LengthOfCircle(double value_A){
+    double Pi = 3.14159265;
+    double L = 2.*Pi*value_A;
+    return L;
+}
+
+double factorial(double value_A) {
+    return value_A == 0 ? 1 : value_A * factorial(value_A - 1);
+}
+
+double Stirling(int value_A, int value_B)
+{
+    if (value_A == value_B) return 1;
+    else
+        if (value_B == 0) return 0;
+        else
+            return Stirling(value_A - 1, value_B - 1) + value_B * Stirling(value_A - 1, value_B);
+
+}
 
