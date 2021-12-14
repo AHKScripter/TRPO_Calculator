@@ -5,10 +5,8 @@
 
 using namespace std;
 
-double sum(double a, double b);
-double mynus(double a, double b);
-double multiply(double a, double b);
-double share(double a, double b);
-double elevate(double a, double b);
-
-
+double sum(double value_A, double value_B);
+double mynus(double value_A, double value_B);
+double multiply(double value_A, double value_B);
+double share(double value_A, double value_B);
+double elevate(double value_A, double value_B);
