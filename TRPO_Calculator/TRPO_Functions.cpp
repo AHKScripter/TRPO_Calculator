@@ -59,5 +59,6 @@ double Triangle(double value_A, double value_B, double value_C) {
     double p = (value_A + value_B + value_C) / 2;
     double s = pow(double(p * (p - value_A) * (p - value_B) * (p - value_C)), 0.5);
     return s;
+
 }
 

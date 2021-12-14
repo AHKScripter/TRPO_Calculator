@@ -102,6 +102,7 @@ int main()
             cout << "|[4] Stirling       | 2nd |\n";  
             cout << "|[5] Triangle       |  S  |\n";
             cout << "|[6] Back to menu         |\n";
+
             cout << "---------------------------\n";
             cout << " Select a menu item: ";
             cin >> select;
