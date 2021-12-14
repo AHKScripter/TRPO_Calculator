@@ -20,7 +20,6 @@ int main()
         cout << "\tCalculator\n";
         cout << "-----------Menu-----------\n";
         cout << "|1 - Calculate expression| \n|2 - Exit                |\n";
-        cout << "", "|\n";
         cout << "--------------------------\n";
         cout << "Your Choice: ";
         cin >> p;
